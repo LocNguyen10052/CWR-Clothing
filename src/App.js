@@ -1,5 +1,6 @@
 
 import CategoryCart from './Component/Category/CategoryCart';
+import Directory from './Component/Directory/Directory';
 
 const categories = [
   {
@@ -31,11 +32,7 @@ const categories = [
 
 function App() {
   return (
-    <div className='categories-container'>
-      {categories.map((category) => (
-        <CategoryCart category={category}></CategoryCart>
-      ))}
-    </div>
+    <Directory categories={categories}></Directory>
 
   );
 }
